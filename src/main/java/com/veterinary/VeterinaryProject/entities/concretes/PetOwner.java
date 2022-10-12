@@ -7,6 +7,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Data
 @Entity
@@ -40,6 +41,9 @@ public class PetOwner {
     @NotNull
     @Column (name = "phone_number")
     private String phoneNumber;
+
+    @OneToMany(mappedBy = "pets")
+    private List<Pet> pets;
 
 
 }
