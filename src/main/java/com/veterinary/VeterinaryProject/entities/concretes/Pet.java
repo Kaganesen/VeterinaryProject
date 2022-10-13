@@ -37,7 +37,7 @@ public class Pet {
     private String description;
 
     @ManyToOne
-    @JoinColumn(name = "petowner_id")
+    @JoinColumn(name = "petOwner_id")
     private PetOwner petOwner;
 
 }

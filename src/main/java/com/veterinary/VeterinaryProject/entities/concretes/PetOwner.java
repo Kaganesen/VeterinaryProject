@@ -38,12 +38,10 @@ public class PetOwner {
     @NotNull
     private String email;
 
-    @NotNull
     @Column (name = "phone_number")
+    @NotNull
     private String phoneNumber;
 
-    @OneToMany(mappedBy = "pets")
+    @OneToMany (mappedBy = "petOwner")
     private List<Pet> pets;
-
-
 }

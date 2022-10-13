@@ -27,7 +27,7 @@ public class PetManager implements PetService {
     @Override
     public DataResult<List<Pet>> getAll() {
         List<Pet> pets = this.petDao.findAll();
-        return new SuccessDataResult<>(pets , "Listed data");
+        return new SuccessDataResult<>(pets, "Listed data");
     }
 
     @Override
